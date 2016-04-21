@@ -1,0 +1,188 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+@font-face {
+    font-family: 'kunstler_scriptregular';
+    src: url('../fonts/kunstler-webfont.eot');
+    src: url('../fonts/kunstler-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/kunstler-webfont.woff2') format('woff2'),
+         url('../fonts/kunstler-webfont.woff') format('woff'),
+         url('../fonts/kunstler-webfont.ttf') format('truetype'),
+         url('../fonts/kunstler-webfont.svg#kunstler_scriptregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+  color: #333;
+}
+.top-bar {
+  background: #fff;
+  
+  ul {
+    background: #fff;
+  
+    li {
+      background: #fff;
+      
+      a {
+        color: #333;
+      }
+    }
+  }
+}
+.off-canvas{
+  height: 100%;
+  background-color:#333;
+}
+#mobile_menu{
+  background-color:#333;
+}
+.marketing-hero{
+  h1{
+    font-family: 'kunstler_scriptregular';
+    font-size: 4rem;
+    margin:10px 0;
+  }
+}
+.image_caption{
+  margin:10px 0;
+}
+.image_section{
+  margin:10px 0;
+}
+.off-canvas-content{
+  box-shadow:none;
+}
+.menu i{
+  font-size: 2rem;
+}
+.footer_bottom{
+  margin-top: 20px;
+  .menu a{
+    color:#333;
+  }
+}
+.copy_section{
+  margin-top: 10px;
+}
+.caption{
+  margin-top: 15px;
+}
+#off_canvas_menu{
+  li{
+    margin:5px 0 0 15px;
+    font-size: 1.4rem;
+    a{
+      color: #fff;
+    }
+  }
+}
+.zurb-links{
+  .menu i{
+      color: #fff;
+    }
+}
+.footer_bottom{
+  background-color: #333;
+  color: #fff;
+  padding: 7px;
+  font-size: .7rem;
+}
+#main_nav{
+  border-bottom:1px solid #f1f1f1;
+  margin-bottom: 5px;
+}
+.gallery_image{
+  margin-bottom:15px;
+}
+.error{
+  visibility: hidden;
+}
+// Small screens
+@media only screen { } /* Define mobile styles */
+
+@media only screen and (max-width: 40em) { } /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+  .menu i{
+    font-size: 1.5rem;
+  }
+  #main_nav{
+    .menu{
+      li{
+        a{
+          padding:.7rem .5rem;
+        }
+      }
+    }
+  }
+} /* min-width 641px, medium screens */
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+// Large screens
+@media only screen and (min-width: 64.063em) { 
+  .menu i{
+    font-size: 1.2rem;
+  }
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) { } /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) { } /* min-width 1921px, xxlarge screens */
