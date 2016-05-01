@@ -3,24 +3,7 @@
     <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-position="left">
 
       <div class="zurb-links">
-        <ul class="top no-bullet" id="off_canvas_menu">
-        <li class="has-submenu">
-        <a href="index.html">Home</a>
-        </li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li class="has-submenu">
-        <a href="about.html">About</a>
-        </li>
-        <li class="has-submenu">
-        <a href="contact.html">Contact</a>
-        </li>
-        </ul>
-        <ul class="no-bullet menu">
-          <li><a href="#"><i class="fi-social-twitter"></i></a></li>
-          <li><a href="#"><i class="fi-social-instagram"></i></a></li>
-          <li><a href="#"><i class="fi-social-facebook"></i></a></li>
-          <li><a href="#"><i class="fi-social-pinterest"></i></a></li>
-        </ul>
+        {{> mobile_menu}}
       </div>
     </div>
 
@@ -33,33 +16,13 @@
     </div>
     <!-- Main Navigation -->
     <nav class="top-bar show-for-medium" id="main_nav">
-      <ul class="menu top-bar-left">
-        <li class="has-submenu">
-        <a href="index.html">Home</a>
-        </li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li class="has-submenu">
-        <a href="about.html">About</a>
-        </li>
-        <li class="has-submenu">
-        <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <ul class="no-bullet menu top-bar-right">
-          <li><a href="#"><i class="fi-social-twitter"></i></a></li>
-          <li><a href="#"><i class="fi-social-instagram"></i></a></li>
-          <li><a href="#"><i class="fi-social-facebook"></i></a></li>
-          <li><a href="#"><i class="fi-social-pinterest"></i></a></li>
-        </ul>
+      {{> main_navigation}}
     </nav>
     <header class="marketing-hero without-subnav">
-      <div class="row column text-center">
-        <h1 class="hero-main-header">Blank Space</h1>
-        <h2>Contact</h2>
-      </div>
+      {{> header}}
     </header>
 
-    <main class="row columns">
+    <main class="row columns medium-6 medium-centered">
       <form>
         <div class="row">
           <div class="large-6 columns">
@@ -81,16 +44,14 @@
         <small class="error">Invalid entry</small>
         
         <div class="large-6">
-            <a href="#" class="button tiny">Default Button</a>
+            <a href="#" class="button small">Submit</a>
         </div>
 
       </form>
     </main>
  
     <footer class="footer_bottom" id="footer">
-      <div class="columns copy_section small-10 small-centered text-center row">
-        <p class="copyright">&copy; 2016 Jrdn-360.com, Inc. All rights reserved.</p>
-      </div>
+       {{> footer }}
     </footer>
 
     </div>

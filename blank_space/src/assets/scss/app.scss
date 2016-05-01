@@ -117,6 +117,9 @@ body{
 .caption{
   margin-top: 15px;
 }
+.img_spacing{
+  margin-bottom: 15px;
+}
 #off_canvas_menu{
   li{
     margin:5px 0 0 15px;
@@ -147,6 +150,17 @@ body{
 .error{
   visibility: hidden;
 }
+.button{
+  background-color:#333;
+}
+hr{
+  margin:40px 0;
+}
+@media (min-width:640px) and (max-width:1180px){
+  .subheader{
+    font-size: 1rem;
+  }
+}
 // Small screens
 @media only screen { } /* Define mobile styles */
 
@@ -154,6 +168,9 @@ body{
 
 // Medium screens
 @media only screen and (min-width: 40.063em) {
+  #section_spacing{
+    margin-top: 80px;
+  }
   .menu i{
     font-size: 1.5rem;
   }
@@ -168,7 +185,16 @@ body{
   }
 } /* min-width 641px, medium screens */
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+@media only screen and (min-width: 40.063em) and (max-width: 63em) {
+   figcaption{
+      .image_caption{
+        margin: 20% 0;
+        .subheader{
+          font-size: 2rem;
+        }
+      }
+   }
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
 
 // Large screens
 @media only screen and (min-width: 64.063em) { 

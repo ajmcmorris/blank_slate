@@ -3,24 +3,7 @@
     <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-position="left">
 
       <div class="zurb-links">
-        <ul class="top no-bullet" id="off_canvas_menu">
-        <li class="has-submenu">
-        <a href="index.html">Home</a>
-        </li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li class="has-submenu">
-        <a href="about.html">About</a>
-        </li>
-        <li class="has-submenu">
-        <a href="contact.html">Contact</a>
-        </li>
-        </ul>
-        <ul class="no-bullet menu">
-          <li><a href="#"><i class="fi-social-twitter"></i></a></li>
-          <li><a href="#"><i class="fi-social-instagram"></i></a></li>
-          <li><a href="#"><i class="fi-social-facebook"></i></a></li>
-          <li><a href="#"><i class="fi-social-pinterest"></i></a></li>
-        </ul>
+       {{> mobile_menu}}
       </div>
     </div>
 
@@ -33,78 +16,29 @@
     </div>
     <!-- Main Navigation -->
     <nav class="top-bar show-for-medium" id="main_nav">
-      <ul class="menu top-bar-left">
-        <li class="has-submenu">
-        <a href="index.html">Home</a>
-        </li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li class="has-submenu">
-        <a href="about.html">About</a>
-        </li>
-        <li class="has-submenu">
-        <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <ul class="no-bullet menu top-bar-right">
-          <li><a href="#"><i class="fi-social-twitter"></i></a></li>
-          <li><a href="#"><i class="fi-social-instagram"></i></a></li>
-          <li><a href="#"><i class="fi-social-facebook"></i></a></li>
-          <li><a href="#"><i class="fi-social-pinterest"></i></a></li>
-        </ul>
+      {{> main_navigation}}
     </nav>
     <header class="marketing-hero without-subnav">
-      <div class="row column text-center">
-        <h1 class="hero-main-header">Blank Space</h1>
-        <h2>Gallery</h2>
-      </div>
+      {{> header}}
     </header>
 
     <main class="row columns" id="gallery_main_section">
       <div class="row columns image_section">
 
-         <div class="small-6 medium-4 columns gallery_image">
-           <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-        </div>
-
-         <div class="small-6 medium-4 columns gallery_image">
-           <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-         </div>
-
-         <div class="small-6 medium-4 columns gallery_image">
-           <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-         </div>
-
-         <div class="small-6 medium-4 columns gallery_image">
-           <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-         </div>
-
-          <div class="small-6 medium-4 columns gallery_image">
-           <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-        </div>
-
-         <div class="small-6 medium-4 columns gallery_image">
-           <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-         </div>
-
-         <div class="small-6 medium-4 columns gallery_image">
-           <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-         </div>
-
-         <div class="small-6 medium-4 columns gallery_image">
-           <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-         </div>
-
-         <div class="small-6 medium-4 columns gallery_image">
-           <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-         </div>
+        <ul class="small-block-grid-4 no-bullet">
+          <li class="medium-4 columns gallery_image" data-featherlight="#mylightbox"><a id="mylightbox" class="image_link" data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" ><img src="assets/img/interchange/train_station_small.jpg" alt="" data-caption="caption here..."></a></li>
+          <li class="medium-4 columns gallery_image" data-featherlight="#mylightbox1"><a id="mylightbox1" class="image_link" data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" ><img src="assets/img/interchange/train_station_small.jpg" alt="" data-caption="caption here..."></a></li>
+          <li class="medium-4 columns gallery_image" data-featherlight="#mylightbox2"><a id="mylightbox2" class="image_link" data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" ><img src="assets/img/interchange/train_station_small.jpg" alt="" data-caption="caption here..."></a></li>
+          <li class="medium-4 columns gallery_image" data-featherlight="#mylightbox2"><a id="mylightbox2" class="image_link" data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" ><img src="assets/img/interchange/train_station_small.jpg" alt="" data-caption="caption here..."></a></li>
+          <li class="medium-4 columns gallery_image" data-featherlight="#mylightbox3"><a id="mylightbox3" class="image_link" data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" ><img src="assets/img/interchange/train_station_small.jpg" alt="" data-caption="caption here..."></a></li>
+          <li class="medium-4 columns gallery_image" data-featherlight="#mylightbox4"><a id="mylightbox4" class="image_link" data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" ><img src="assets/img/interchange/train_station_small.jpg" alt="" data-caption="caption here..."></a></li>
+        </ul>
 
       </div>
     </main>
 
         <footer class="footer_bottom" id="footer">
-          <div class="columns copy_section small-10 small-centered text-center row">
-            <p class="copyright">&copy; 2016 Jrdn-360.com, Inc. All rights reserved.</p>
-          </div>
+         {{> footer }}
         </footer>
 
     </div>

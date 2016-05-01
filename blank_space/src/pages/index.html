@@ -3,24 +3,7 @@
     <div class="off-canvas position-left" id="offCanvas" data-off-canvas data-position="left">
 
       <div class="zurb-links">
-        <ul class="top no-bullet" id="off_canvas_menu">
-        <li class="has-submenu">
-        <a href="index.html">Home</a>
-        </li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li class="has-submenu">
-        <a href="about.html">About</a>
-        </li>
-        <li class="has-submenu">
-        <a href="contact.html">Contact</a>
-        </li>
-        </ul>
-        <ul class="no-bullet menu">
-          <li><a href="#"><i class="fi-social-twitter"></i></a></li>
-          <li><a href="#"><i class="fi-social-instagram"></i></a></li>
-          <li><a href="#"><i class="fi-social-facebook"></i></a></li>
-          <li><a href="#"><i class="fi-social-pinterest"></i></a></li>
-        </ul>
+        {{> mobile_menu}}
       </div>
     </div>
 
@@ -33,29 +16,10 @@
     </div>
     <!-- Main Navigation -->
     <nav class="top-bar show-for-medium" id="main_nav">
-      <ul class="menu top-bar-left">
-        <li class="has-submenu">
-        <a href="index.html">Home</a>
-        </li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li class="has-submenu">
-        <a href="about.html">About</a>
-        </li>
-        <li class="has-submenu">
-        <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-      <ul class="no-bullet menu top-bar-right">
-          <li><a href="#"><i class="fi-social-twitter"></i></a></li>
-          <li><a href="#"><i class="fi-social-instagram"></i></a></li>
-          <li><a href="#"><i class="fi-social-facebook"></i></a></li>
-          <li><a href="#"><i class="fi-social-pinterest"></i></a></li>
-        </ul>
+      {{> main_navigation}}
     </nav>
     <header class="marketing-hero without-subnav">
-      <div class="row column">
-        <h1 class="hero-main-header text-center">Blank Space</h1>
-      </div>
+      {{> header}}
     </header>
  
     <article class="page-content clearfix">
@@ -69,57 +33,80 @@
         </div>
       </div>
 
-      <div class="row framework-callouts columns">
+      <div class="framework-callouts small-10 small-centered">
       
           <div class="row columns image_section">
-             <div class="small-6 columns">
-               <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-               <div class="text-center image_caption">
-               <h4 class="subheader">Plants Table</h4>
-               <h6 class="subheader">April 15th 2016</h6>
-               </div>
+             <div class="large-4 large-uncentered columns img_spacing">
+                <div class="grid">
+                  <figure class="effect-bubba">
+                     <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
+                    <figcaption>
+                      <div class="text-center image_caption">
+                       <h4 class="subheader">Plants Table</h4>
+                       <h6 class="subheader">April 15th 2016</h6>
+                       </div>
+                    </figcaption>     
+                  </figure>
+                </div>
             </div>
-             <div class="small-6 columns">
-               <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-               <div class="text-center image_caption">
-               <h4 class="subheader">Plants Table</h4>
-               <h6 class="subheader">April 15th 2016</h6>
-               </div>
+             <div class="large-4 large-uncentered columns img_spacing">
+               <div class="grid">
+                  <figure class="effect-bubba">
+                     <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
+                    <figcaption>
+                      <div class="text-center image_caption">
+                       <h4 class="subheader">Plants Table</h4>
+                       <h6 class="subheader">April 15th 2016</h6>
+                       </div>
+                    </figcaption>     
+                  </figure>
+                </div>
              </div>
+
+             <div class="large-4 large-uncentered columns img_spacing">
+               <div class="grid">
+                  <figure class="effect-bubba">
+                     <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
+                    <figcaption>
+                      <div class="text-center image_caption">
+                       <h4 class="subheader">Plants Table</h4>
+                       <h6 class="subheader">April 15th 2016</h6>
+                       </div>
+                    </figcaption>     
+                  </figure>
+                </div>
+             </div>
+              <div class="clearfix"></div>
           </div>
           
-          <div class="row columns image_section">
-               <div class="columns">
-                 <div class="text-center image_caption">
-                   <h4 class="subheader">Plants Table</h4>
-                   <h6 class="subheader">April 15th 2016</h6>
+          <hr class="hide-for-medium">
+
+          <div class="row">
+            <div class="columns image_section" id="section_spacing">
+                 <div class="columns medium-7">
+                 <div class="medium-8 medium-centered columns ">
+                   <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
                  </div>
-                 <p class="text-center">Yuccie polaroid affogato, meggings four dollar toast whatever schlitz hammock neutra ramps cray fingerstache skateboard pug. Asymmetrical cronut hoodie, green juice waistcoat scenester brooklyn tattooed kickstarter iPhone migas before they sold out shoreditch locavore art party. Street art retro YOLO jean shorts, authentic freegan man bun heirloom. </p>
+                 <div class="columns">
+                    <p class="text-center caption medium-10 medium-centered">Yuccie polaroid affogato, meggings four dollar toast whatever schlitz hammock neutra ramps cray fingerstache skateboard pug. </p>
                  </div>
-              </div>
+            </div>
+            <div class="columns image_section medium-5">
+                   <div class="text-center image_caption">
+                     <h4 class="subheader">Plants Table</h4>
+                     <h6 class="subheader">April 15th 2016</h6>
+                   <p class="text-center">Yuccie polaroid affogato, meggings four dollar toast whatever schlitz hammock neutra ramps cray fingerstache skateboard pug. Asymmetrical cronut hoodie, green juice waistcoat scenester brooklyn tattooed kickstarter. </p>
+                   </div>
+                </div>
+            </div>
           </div>
 
-          <div class="columns image_section">
-               <div class="columns">
-                 <div class="text-center image_caption">
-                 <h4 class="subheader">Plants Table</h4>
-                 <h6 class="subheader">April 15th 2016</h6>
-               </div>
-               <div class="small-8 small-centered columns ">
-                 <img data-interchange="[assets/img/interchange/train_station_small.jpg, small], [assets/img/interchange/train_station_medium.jpg, medium], [assets/img/interchange/train_station_large.jpg, large]" alt="">
-               </div>
-               <div class="columns">
-                  <p class="text-center caption">Yuccie polaroid affogato, meggings four dollar toast whatever schlitz hammock neutra ramps cray fingerstache skateboard pug. </p>
-               </div>
-          </div>
         </div>
       </div>
     </article>
  
       <footer class="footer_bottom" id="footer">
-        <div class="columns copy_section small-10 small-centered text-center row">
-          <p class="copyright">&copy; 2016 Jrdn-360.com, Inc. All rights reserved.</p>
-        </div>
+         {{> footer }}
       </footer>
 
     </div>
